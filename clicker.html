@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicker Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./clickerscript.js"></script>
+  </head>
+  <body>
+    <nav id="nav">nav bar</nav>
+    <br>
+    <div id="grid">
+      <div id="scoreContainer">
+          <h1 id="score">Brains: 0</h1>
+          <p id="production">Brains per second: 0</p>
+      </div>
+      <div id="unit1" onclick="purchase(unit1)">
+        <table>
+          <tr>
+            <td>name 1</td>
+          </tr>
+          <tr>
+            <td id="unit1Cost">Price 10 brains</td>
+          </tr>
+        </table>
+      </div>
+      <div id="buttonContainer">
+        <div id="clickbutton" onclick="clickButton()"></div>
+      </div>
+      <div id="unit2" onclick="purchase(unit2)">
+        <table>
+          <tr>
+            <td>name 2</td>
+          </tr>
+          <tr>
+            <td id="unit2Cost">Price 100 brains</td>
+          </tr>
+        </table>
+      </div>
+      <div id="unit3" onclick="purchase(unit3)">
+        <table>
+          <tr>
+            <td>name 3</td>
+          </tr>
+          <tr>
+            <td id="unit3Cost">Price 1000 brains</td>
+          </tr>
+        </table>
+      </div>
+      <div id="unit4" onclick="purchase(unit4)">
+        <table>
+          <tr>
+            <td>name 4</td>
+          </tr>
+          <tr>
+            <td id="unit4Cost">Price 10000 brains</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>
