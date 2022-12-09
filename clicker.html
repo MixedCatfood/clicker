@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clicker Clone</title>
+    <title>Crustacean Clicker</title>
     <link rel="stylesheet" href="style.css">
     <script src="./clickerscript.js"></script>
   </head>
@@ -13,51 +13,72 @@
     <br>
     <div id="grid">
       <div id="scoreContainer">
-          <h1 id="score">Brains: 0</h1>
-          <p id="production">Brains per second: 0</p>
+          <h1 id="score">Shrimps: 0</h1>
+          <p id="production">Shrimps per second: 0</p>
       </div>
       <div id="unit1" onclick="purchase(unit1)">
+        <h2 id="unitName">Helper Shrimp</h2>
+        <p id="unitDescription">These shrimp will help you acquire even more shrimp!</p>
+        <p id="unit1Cost">Price: 10 Shrimps</p>
         <table>
           <tr>
-            <td>name 1</td>
-          </tr>
-          <tr>
-            <td id="unit1Cost">Price 10 brains</td>
+            <td id="unit1Quantity">Number of helper shrimp owned:</td>
+            <td id="unit1QuantityNumber">0</td>
           </tr>
         </table>
+        <div id="progressBarUnit1">
+          <div id="unit1ProgressBarProgressing"></div>
+        </div>
       </div>
       <div id="buttonContainer">
-        <div id="clickbutton" onclick="clickButton()"></div>
+        <div id="clickbutton" onclick="shrimpClickFunction()">
+          <img id='shrimp' src="shrimp.png">
+        </div>
       </div>
       <div id="unit2" onclick="purchase(unit2)">
+        <h2 id="unitName">Crab</h2>
+        <p id="unitDescription">These crabs will help you acquire even more shrimp!</p>
+        <p id="unit2Cost">Price: 100 Shrimps</p>
         <table>
           <tr>
-            <td>name 2</td>
-          </tr>
-          <tr>
-            <td id="unit2Cost">Price 100 brains</td>
+            <td id="unit2Quantity">Number of crabs owned:</td>
+            <td id="unit2QuantityNumber">0</td>
           </tr>
         </table>
+        <div id="progressBarUnit2">
+          <div id="unit2ProgressBarProgressing"></div>
+        </div>
       </div>
       <div id="unit3" onclick="purchase(unit3)">
+        <h2 id="unitName">Lobster</h2>
+        <p id="unitDescription">These lobsters will help you acquire even more shrimp!</p>
+        <p id="unit3Cost">Price: 1000 Shrimps</p>
         <table>
           <tr>
-            <td>name 3</td>
-          </tr>
-          <tr>
-            <td id="unit3Cost">Price 1000 brains</td>
+            <td id="unit3Quantity">Number of lobsters owned:</td>
+            <td id="unit3QuantityNumber">0</td>
           </tr>
         </table>
+        <div id="progressBarUnit3">
+          <div id="unit3ProgressBarProgressing"></div>
+        </div>
       </div>
       <div id="unit4" onclick="purchase(unit4)">
+        <h2 id="unitName">Isopod</h2>
+        <p id="unitDescription">These isopods will help you acquire even more shrimp!</p>
+        <p id="unit4Cost">Price: 10000 Shrimps</p>
         <table>
           <tr>
-            <td>name 4</td>
-          </tr>
-          <tr>
-            <td id="unit4Cost">Price 10000 brains</td>
+            <td id="unit4Quantity">Number of isopods owned:</td>
+            <td id="unit4QuantityNumber">0</td>
           </tr>
         </table>
+        <div id="progressBarUnit4">
+          <div id="unit4ProgressBarProgressing"></div>
+        </div>
+      </div>
+      <div id="upgradeContainer">
+
       </div>
 
     </div>

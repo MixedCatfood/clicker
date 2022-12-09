@@ -13,16 +13,12 @@ body {
 #production {
     text-align: center;
 }
-#clickbutton {
-    height: 100px;
-    width: 100px;
-    background-color: brown;
-}
+
 #scoreContainer {
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
-    height: 120px;
+    height: 150px;
 }
 #buttonContainer {
     grid-row-start: 2;
@@ -31,39 +27,122 @@ body {
     align-items: center;
     justify-content: center;
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
 }
 #grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
 }
 #unit1 {
     grid-column: 2;
-    height: 120px;
+    height: 150px;
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
+    line-height: 75%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#shrimp {
+    height: 200px;
+    width: 200px;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#progressBarUnit1 {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+}
+#unit1ProgressBarProgressing {
+    margin-top: 4px;
+    width: 0%;
+    height: 20px;
+    background-color: rgb(0, 128, 0);
+    border-radius: 2px;
+}
+#progressBarUnit2 {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+}
+#unit2ProgressBarProgressing {
+    width: 0%;
+    height: 20px;
+    background-color: rgb(0, 128, 0);
+    border-radius: 2px;
+    margin-top: 4px;
+}
+#progressBarUnit3 {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+}
+#unit3ProgressBarProgressing {
+    width: 0%;
+    height: 20px;
+    background-color: rgb(0, 128, 0);
+    border-radius: 2px;
+    margin-top: 4px;
+}
+#progressBarUnit4 {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+}
+#unit4ProgressBarProgressing {
+    width: 0%;
+    height: 20px;
+    background-color: rgb(0, 128, 0);
+    border-radius: 2px;
+    margin-top: 4px;
 }
 #unit2{
     grid-column: 2;
-    height: 120px;
+    height: 150px;
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
+    line-height: 75%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 #unit3 {
     grid-column: 2;
-    height: 120px;
+    height: 150px;
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
+    line-height: 75%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 #unit4 {
     grid-column: 2;
-    height: 120px;
+    height: 150px;
     border-style: solid;
-    border-color: beige;
+    border-color: rgb(11, 14, 59);
     border-radius: 5px;
+    line-height: 75%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#upgradeContainer {
+    border-style: solid;
+    border-color: rgb(11, 14, 59);
+    min-height: 150px;
 }
