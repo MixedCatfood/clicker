@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="./clickerscript.js"></script>
   </head>
-  <body>
+  <body onload="loadGame()">
     <nav id="nav">nav bar</nav>
     <br>
     <div id="grid">
       <div id="scoreContainer">
         <!-- make span for number -->
           <h1 id="score">Shrimps: 0</h1>
-          <p id="production">Shrimps per second: 0</p>
+          <p id="production">Shrimps per second: 0.0</p>
       </div>
       <div id="unit1" onclick="purchase(unit1)">
         <h2 id="unitName">Jumbo Shrimp</h2>
@@ -86,7 +86,52 @@
         </div>
       </div>
       <div id="upgradeContainer">
-
+        <!-- <div id="clickUpgrade1" class="upgrade" onclick="purchaseUpgrade()"></div>
+        <div id="hideCU1" class="hide"><p>Multiplies your clicking production by 2!</p></div>
+        <div id="clickUpgrade2" class="upgrade"></div>
+        <div id="clickUpgrade3" class="upgrade"></div>
+        <div id="clickUpgrade4" class="upgrade"></div>
+        <div id="clickUpgrade5" class="upgrade"></div> -->
+        <div id="unit1Upgrade1" class="upgrade" onclick="purchaseUpgrade(upgrades.unit11, unit1, unit11Element)"></div>
+        <div id="hideU1U1" class="hide"><p>Multiplies your Jumbo Shrimp production by 2!</p><p>Cost: 5</p></div>
+        <div id="unit1Upgrade2" class="upgrade" onclick="purchaseUpgrade(upgrades.unit12, unit1, unit12Element)"></div>
+        <div id="hideU1U2" class="hide"><p>Multiplies your Jumbo Shrimp production by 2!</p><p>Cost: 10</p></div>
+        <div id="unit1Upgrade3" class="upgrade" onclick="purchaseUpgrade(upgrades.unit13, unit1, unit13Element)"></div>
+        <div id="hideU1U3" class="hide"><p>Multiplies your Jumbo Shrimp production by 2!</p><p>Cost: 15</p></div>
+        <div id="unit1Upgrade4" class="upgrade" onclick="purchaseUpgrade(upgrades.unit14, unit1, unit14Element)"></div>
+        <div id="hideU1U4" class="hide"><p>Multiplies your Jumbo Shrimp production by 2!</p><p>Cost:</p></div>
+        <div id="unit1Upgrade5" class="upgrade" onclick="purchaseUpgrade(upgrades.unit15, unit1, unit15Element)"></div>
+        <div id="hideU1U5" class="hide"><p>Multiplies your Jumbo Shrimp production by 2!</p><p>Cost:</p></div>
+        <div id="unit2Upgrade1" class="upgrade" onclick="purchaseUpgrade(upgrades.unit21, unit2, unit21Element)"></div>
+        <div id="hideU2U1" class="hide"><p>Multiplies your Crab production by 2!</p><p>Cost:</p></div>
+        <div id="unit2Upgrade2" class="upgrade" onclick="purchaseUpgrade(upgrades.unit22, unit2, unit22Element)"></div>
+        <div id="hideU2U2" class="hide"><p>Multiplies your Crab production by 2!</p><p>Cost:</p></div>
+        <div id="unit2Upgrade3" class="upgrade" onclick="purchaseUpgrade(upgrades.unit23, unit2, unit23Element)"></div>
+        <div id="hideU2U3" class="hide"><p>Multiplies your Crab production by 2!</p><p>Cost:</p></div>
+        <div id="unit2Upgrade4" class="upgrade" onclick="purchaseUpgrade(upgrades.unit24, unit2, unit24Element)"></div>
+        <div id="hideU2U4" class="hide"><p>Multiplies your Crab production by 2!</p><p>Cost:</p></div>
+        <div id="unit2Upgrade5" class="upgrade" onclick="purchaseUpgrade(upgrades.unit25, unit2, unit25Element)"></div>
+        <div id="hideU2U5" class="hide"><p>Multiplies your Crab production by 2!</p><p>Cost:</p></div>
+        <div id="unit3Upgrade1" class="upgrade" onclick="purchaseUpgrade(upgrades.unit31, unit3, unit31Element)"></div>
+        <div id="hideU3U1" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit3Upgrade2" class="upgrade" onclick="purchaseUpgrade(upgrades.unit32, unit3, unit32Element)"></div>
+        <div id="hideU3U2" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit3Upgrade3" class="upgrade" onclick="purchaseUpgrade(upgrades.unit33, unit3, unit33Element)"></div>
+        <div id="hideU3U3" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit3Upgrade4" class="upgrade" onclick="purchaseUpgrade(upgrades.unit34, unit3, unit34Element)"></div>
+        <div id="hideU3U4" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit3Upgrade5" class="upgrade" onclick="purchaseUpgrade(upgrades.unit35, unit3, unit35Element)"></div>
+        <div id="hideU3U5" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit4Upgrade1" class="upgrade" onclick="purchaseUpgrade(upgrades.unit41, unit4, unit41Element)"></div>
+        <div id="hideU4U1" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
+        <div id="unit4Upgrade2" class="upgrade" onclick="purchaseUpgrade(upgrades.unit42, unit4, unit42Element)"></div>
+        <div id="hideU4U2" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit4Upgrade3" class="upgrade" onclick="purchaseUpgrade(upgrades.unit43, unit4, unit43Element)"></div>
+        <div id="hideU4U3" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit4Upgrade4" class="upgrade" onclick="purchaseUpgrade(upgrades.unit44, unit4, unit44Element)"></div>
+        <div id="hideU4U4" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="unit4Upgrade5" class="upgrade" onclick="purchaseUpgrade(upgrades.unit45, unit4, unit45Element)"></div>
+        <div id="hideU4U5" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
       </div>
 
     </div>
