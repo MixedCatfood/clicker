@@ -53,18 +53,14 @@
       <div id="unit3" onclick="purchase(unit3)">
         <div id="unitFlex">
           <div id="unitFlexLeft">
+            <img id='unitImage' src="lobster.png">
+          </div>
+          <div id="unitFlexCenter">
             <h2 id="unitName">Lobster</h2>
-            <p id="unitDescription">These lobsters will help you acquire even more shrimp!</p>
             <p id="unit3Cost">Price: 1000 Shrimps</p>
-            <table>
-              <tr>
-                <td id="unit3Quantity">Number of lobsters owned:</td>
-                <td id="unit3QuantityNumber">0</td>
-              </tr>
-            </table>
           </div>
           <div id="unitFlexRight">
-            <img id='lobsterImage' src="lobster.png">
+            <span id="unit3QuantityNumber" class="unitQuantityContainer">0</span>
           </div>
         </div>
         <div id="progressBarUnit3">
@@ -72,17 +68,20 @@
         </div>
       </div>
       <div id="unit4" onclick="purchase(unit4)">
-        <h2 id="unitName">Isopod</h2>
-        <p id="unitDescription">These isopods will help you acquire even more shrimp!</p>
-        <p id="unit4Cost">Price: 10000 Shrimps</p>
-        <table>
-          <tr>
-            <td id="unit4Quantity">Number of isopods owned:</td>
-            <td id="unit4QuantityNumber">0</td>
-          </tr>
-        </table>
-        <div id="progressBarUnit4">
-          <div id="unit4ProgressBarProgressing"></div>
+        <div id="unitFlex">
+          <div id="unitFlexLeft">
+            <img id="unitImage" src="isopod.png">
+          </div>
+          <div id="unitFlexCenter">
+            <h2 id="unitName">Isopod</h2>
+            <p id="unit4Cost">Price: 10000 Shrimps</p>
+          </div>
+          <div id="unitFlexRight">
+            <span id="unit4QuantityNumber" class="unitQuantityContainer">0</span>
+          </div>
+          <div id="progressBarUnit4">
+            <div id="unit4ProgressBarProgressing"></div>
+          </div>
         </div>
       </div>
       <div id="upgradeContainer">
@@ -125,13 +124,13 @@
         <div id="unit4Upgrade1" class="upgrade" onclick="purchaseUpgrade(upgrades.unit41, unit4, unit41Element)"></div>
         <div id="hideU4U1" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
         <div id="unit4Upgrade2" class="upgrade" onclick="purchaseUpgrade(upgrades.unit42, unit4, unit42Element)"></div>
-        <div id="hideU4U2" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="hideU4U2" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
         <div id="unit4Upgrade3" class="upgrade" onclick="purchaseUpgrade(upgrades.unit43, unit4, unit43Element)"></div>
-        <div id="hideU4U3" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="hideU4U3" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
         <div id="unit4Upgrade4" class="upgrade" onclick="purchaseUpgrade(upgrades.unit44, unit4, unit44Element)"></div>
-        <div id="hideU4U4" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="hideU4U4" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
         <div id="unit4Upgrade5" class="upgrade" onclick="purchaseUpgrade(upgrades.unit45, unit4, unit45Element)"></div>
-        <div id="hideU4U5" class="hide"><p>Multiplies your Lobster production by 2!</p><p>Cost:</p></div>
+        <div id="hideU4U5" class="hide"><p>Multiplies your Isopod production by 2!</p><p>Cost:</p></div>
       </div>
 
     </div>
