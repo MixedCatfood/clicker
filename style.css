@@ -48,7 +48,7 @@ body {
 }
 #buttonContainer {
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,10 +163,13 @@ body {
     display: flex;
 }
 #unitFlexLeft{
-    width: 25%;
+    width: 33%;
+}
+#unitFlexCenter{
+    width:auto;
 }
 #unitFlexRight{
-    width:25%;
+    width:33%;
     pointer-events: none;
     justify-content: right;
 }
@@ -174,6 +177,9 @@ body {
     font-size: 140px;
     margin: auto;
     line-height: 110%;
+    text-align: right;
+    width: 100%;
+    display: block;
 }
 #unitImage {
     height: 150px;
@@ -197,6 +203,7 @@ body {
     border-color: gray;
     border-radius: 5px;
     margin: 5px;
+    display: none;
 }
 
 #unit1Upgrade1 {

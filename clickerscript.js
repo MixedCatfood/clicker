@@ -4,28 +4,176 @@ let unit1 = {
     name: 'Jumbo Shrimp',
     cost: 10,
     production: .1,
-    quantity: 0
+    quantity: 0,
+    upgrades: {
+        unit11: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit1Upgrade1",
+        },
+        unit12: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit1Upgrade2"
+        },
+        unit13: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit1Upgrade3"
+        },
+        unit14: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit1Upgrade4"
+        },
+        unit15: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit1Upgrade5"
+        }
+    }
 };
 //unit2 is crab
 let unit2 = {
     name: 'Crab',
     cost: 100,
     production: 1,
-    quantity: 0
+    quantity: 0,
+    upgrades: {
+        unit21: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit2Upgrade1"
+        },
+        unit22: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit2Upgrade2"
+        },
+        unit23: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit2Upgrade3"
+        },
+        unit24: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit2Upgrade4"
+        },
+        unit25: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit2Upgrade5"
+        }
+    }
 };
 //unit3 is lobster
 let unit3 = {
     name: 'Lobster',
     cost: 1000,
     production: 10,
-    quantity: 0
+    quantity: 0,
+    upgrades: {
+        unit31: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit3Upgrade1"
+        },
+        unit32: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit3Upgrade2"
+        },
+        unit33: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit3Upgrade3"
+        },
+        unit34: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit3Upgrade4"
+        },
+        unit35: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit3Upgrade5"
+        }
+    }
 };
 //unit4 is isopod
 let unit4 = {
     name: 'Isopod',
     cost: 10000,
     production: 50,
-    quantity: 0
+    quantity: 0,
+    upgrades: {
+        unit41: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit4Upgrade1"
+        },
+        unit42: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit4Upgrade2"
+        },
+        unit43: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit4Upgrade3"
+        },
+        unit44: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit4Upgrade3"
+        },
+        unit45: {
+            purchased: false,
+            production: 2,
+            cost: 2,
+            quantityRequired: 1,
+            idName: "unit4Upgrade5"
+        }
+    }
 };
 
 let unit11Element = "unit1Upgrade1";
@@ -49,158 +197,6 @@ let unit43Element = "unit4Upgrade3";
 let unit44Element = "unit4Upgrade4";
 let unit45Element = "unit4Upgrade5";
 
-let upgrades = {
-    // click1: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    // click2: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    // click2: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    // click3: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    // click4: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    // click5: {
-    //     purchased: false,
-    //     production: 2
-    // },
-    unit11: {
-        purchased: false,
-        production: 2,
-        cost: 2
-    },
-    unit12: {
-        purchased: false,
-        production: 2,
-        cost: 2
-    },
-    unit13: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit14: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit15: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit21: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit22: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit23: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit24: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit25: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit31: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit32: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit33: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit34: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit35: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit41: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit42: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit43: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit44: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit45: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit51: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit52: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit53: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit54: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-    unit55: {
-        purchased: false,
-        production: 2,
-        cost: 2,
-    },
-}
-
 let shrimpProduction = 
 (unit1.production * unit1.quantity) + 
 (unit2.production * unit2.quantity) + 
@@ -219,6 +215,7 @@ function purchase(unit) {
         updateShrimpProductionInHTML();
         updateUnitCostInHTML(unit);
         setInterval(crustaceanWorking(unit), 1000);
+        showUpgrade(unit);
     };
 };
 
@@ -236,6 +233,18 @@ function purchaseUpgrade(upgrade, unit, string) {
         document.getElementById(string).style.display = 'none';
     };
 };
+
+function showUpgrade(unit) {
+    const qty = unit.quantity;
+    const upgrades = unit.upgrades;
+    for (const key in upgrades) {
+        const reqQty = upgrades[key].quantityRequired;
+        if(reqQty <= qty && upgrades[key].purchased === false) {
+            console.log(upgrades[key].idName);
+            document.getElementById(upgrades[key].idName).style.display = 'block';
+        }
+    }
+}
 
 function updateUnitCostInHTML(unit) {
     switch(unit) {
